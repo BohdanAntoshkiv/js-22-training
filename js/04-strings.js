@@ -2,16 +2,31 @@
  * Длина строки, свойство length
  */
 const message = 'В этой строке 26 символов.';
-console.log(message.length);
+// console.log(message.length);
+
+// ----------мій приклад---------
+const message1 = 'я люблю Україну';
+// console.log(message1.length)
 
 /*
  * Конкатенация строк
  */
 const firstName = 'Chelsy';
-const lastName = 'Emerald';
+const lastName = 'Emerald'; 
 const fullName = firstName + ' ' + lastName;
 
 // console.log(fullName);
+
+// ----------мій приклад---------
+const playerName = 'Bohdan';
+const playerSurname = 'Antoshkiv';
+const playerCountry = 'Ukraine';
+const playerRegion = 'Ternopil';
+const playerTown = 'Zbarazh';
+const playerInformation = playerName + ' ' + playerSurname + ' ' + 'from' + ' ' + playerCountry + ' ' + playerRegion + ' ' + 'region' + ' ' + playerTown;
+
+// console.log(playerInformation)
+
 
 /*
  * Напиши скрипт который выведет строку в формате:
@@ -22,18 +37,31 @@ const fullName = firstName + ' ' + lastName;
 const room = 716;
 const type = 'VIP';
 
-// const welcomeMsg =
-//   'Гость ' +
-//   firstName +
-//   ' ' +
-//   lastName +
-//   ' поселяется в ' +
-//   type +
-//   ' номер ' +
-//   room;
+const welcomeMsg =
+  'Гость ' +
+  firstName +
+  ' ' +
+  lastName +
+  ' поселяется в ' +
+  type +
+  ' номер ' +
+  room;
 
-const welcomeMsg = `Гость ${firstName} ${lastName} поселяется в ${type} номер ${room}`;
+// const welcomeMsg = `Гость ${firstName} ${lastName} поселяется в ${type} номер ${room}`;
 // console.log(welcomeMsg);
+
+// ----------мій приклад---------
+const guestName = 'Bohdan';
+const guestSurname = 'Antoshkiv';
+
+const roomType = 'Standart';
+const roomNumber = '777';
+const welkMessage = ('Гість' + ' ' + guestName + ' ' + guestSurname + ' ' + 'поселяється' + ' ' + 'у' + ' ' + roomType + ' ' + 'номер' + ' ' + '#' + roomNumber);
+// console.log(welkMessage)
+
+const welkMessage2 = `Гість ${guestName} ${guestSurname} поселяється у ${roomType} номер # ${roomNumber}`;
+// console.log(welkMessage2);
+
 
 /*
  * Шаблонные строки (template strings)
@@ -45,6 +73,8 @@ const orderMsg = `Вы заказываете ${quantity} холодильник
 
 // console.log(orderMsg);
 
+// ----------мій приклад----------------------------------------------------
+
 /*
  * Нормализация с методом toLowerCase()
  */
@@ -54,9 +84,15 @@ const orderMsg = `Вы заказываете ${quantity} холодильник
 
 // console.log(brand);
 
+// ----------мій приклад----------------------------------------------------
+
+// let brandd = prompt('Напиши бренд')
+// brandd = brandd.toLowerCase();
+// console.log(brandd)
+
 let brand = 'SamSUnG';
 // console.log(brand[4]);
-// console.log(brand.slice(1).toLowerCase());
+// console.log(brand.slice(1).toUpperCase());
 
 brand = brand[0] + brand.slice(1).toLowerCase();
 
@@ -65,20 +101,20 @@ brand = brand[0] + brand.slice(1).toLowerCase();
 /*
  * Поиск в строке с методом includes()
  */
-const blacklistedWord1 = 'спам';
-const blacklistedWord2 = 'распродажа';
+// const blacklistedWord1 = 'спам';
+// const blacklistedWord2 = 'распродажа';
 
-const string1 = 'Привет, я принц Абдул, это не спам, предлагаю тебе миллион!';
-const string2 = 'Самая большая РАСПРОДАЖА этой недели, не пропустите!';
-const string3 = 'Рекламная кампания #fatlivesmatter';
+// const string1 = 'Привет, я принц Абдул, это не спам, предлагаю тебе миллион!';
+// const string2 = 'Самая большая РАСПРОДАЖА этой недели, не пропустите!';
+// const string3 = 'Рекламная кампания #fatlivesmatter';
 
-console.log(string1.includes(blacklistedWord1));
-console.log(string1.includes(blacklistedWord2));
+// console.log(string1.includes(blacklistedWord1));
+// // console.log(string1.includes(blacklistedWord2));
 
-console.log(string2.includes(blacklistedWord1));
+// // console.log(string2.includes(blacklistedWord1));
 
-const normalizedString2 = string2.toLowerCase();
-console.log(normalizedString2.includes(blacklistedWord2));
+// // const normalizedString2 = string2.toLowerCase();
+// // console.log(normalizedString2.includes(blacklistedWord2));
 
-console.log(string3.includes(blacklistedWord1));
-console.log(string3.includes(blacklistedWord2));
+// // console.log(string3.includes(blacklistedWord1));
+// // console.log(string3.includes(blacklistedWord2));
