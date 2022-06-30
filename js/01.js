@@ -5,13 +5,13 @@
  * - Возврат значения
  */
 
-const add = function (x, y) {
-  console.log(x);
-  console.log(y);
-  console.log('Выполянется функция add');
+// const add = function (x, y) {
+//   console.log(x);
+//   console.log(y);
+//   console.log('Выполянется функция add');
 
-  return x + y;
-};
+//   return x + y;
+// };
 
 // const r1 = add(5, 3);
 // console.log('r1: ', r1);
@@ -55,14 +55,14 @@ const add = function (x, y) {
 
 // console.log('Лог перед вызовом функции A');
 
-fnA();
+// fnA();
 
-// console.log('Лог после вызова функции A');
+// // console.log('Лог после вызова функции A');
 
-// console.log('Лог перед вызовом функции B');
-fnB();
-// console.log('Лог после вызова функции B');
+// // console.log('Лог перед вызовом функции B');
+// fnB();
+// // console.log('Лог после вызова функции B');
 
-// console.log('Лог перед вызовом функции C');
-fnC();
-// console.log('Лог после вызова функции C');
+// // console.log('Лог перед вызовом функции C');
+// fnC();
+// // console.log('Лог после вызова функции C');

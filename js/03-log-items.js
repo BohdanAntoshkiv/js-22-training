@@ -4,7 +4,7 @@
 
 const logItems = function (items) {
   for (const item of items) {
-    console.log(item);
+    console.log(item + "   999");
   }
 };
 
