@@ -14,20 +14,31 @@
 
 // console.log(playlist);
 
-// const x = {};
+// МОЯ ПРАКТИКА ----------------------------------------------------------------
 
-// const fn = function (myObject) {
-//   // myObject = { a: 1, b: 2 }
-//   console.log(myObject);
-// };
+const playlist = {
+  name: "my playlist",
+  rating: 4,
+  tracs: ['track-1', 'track-2', 'track-3'],
+  trackCount: 3,
+}
 
-// fn({ a: 1, b: 2 });
+// console.log(playlist)
 
-// const rtfm = function () {
-//   return { a: 5 };
-// };
+const x = {};
 
-// console.log(rtfm());
+const fn = function (myObject) {
+  myObject = { a: 7, b: 2 }
+  console.log(myObject);
+};
+
+fn({ a: 1, b: 2 });
+
+const rtfm = function () {
+  return { a: 5 };
+};
+
+console.log(rtfm());
 
 /*
  * Доступ к свойству
@@ -36,12 +47,12 @@
  * - Отсутствующие свойства
  */
 
-const playlist = {
-  name: 'Мой супер плейлист',
-  rating: 5,
-  tracks: ['трек-1', 'трек-2', 'трек-3'],
-  trackCount: 3,
-};
+// const playlist = {
+//   name: 'Мой супер плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2', 'трек-3'],
+//   trackCount: 3,
+// };
 
 // playlist.qwe = 5;
 
