@@ -118,9 +118,22 @@ const a = {
 }
 const b = a;
 
-console.log(b);
+// console.log(b);
 
+// ------------------------------МАСИВИ І ФУНКЦІЇ ЦЕ ОБЄКТИ--------------------------
 
+const numbers = [1, 3, 6,];
+
+numbers.myName = 'Bohdan';
+
+// console.log(numbers);
+
+const myFunction2 = function () {
+  console.log('hello');
+}
+myFunction2.hello = 'Привіт'
+console.dir(myFunction2);
+// ------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!------------
 
 
 
