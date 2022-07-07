@@ -23,23 +23,40 @@ const playlist = {
   trackCount: 3,
 }
 
-// console.log(playlist)
+console.log(playlist)
 
-const x = {};
+// const x = {};
 
-const fn = function (myObject) {
-  myObject = { a: 7, b: 2 }
-  console.log(myObject);
-};
+// const fn = function (myObject) {
+//   myObject = { a: 7, b: 2 }
+//   console.log(myObject);
+// };
 
-fn({ a: 1, b: 2 });
+// fn({ a: 1, b: 2 });
 
-const rtfm = function () {
-  return { a: 5 };
-};
+// const rtfm = function () {
+//   return { a: 5 };
+// };
 
-console.log(rtfm());
+// console.log(rtfm());
 
+// МОЯ ПРАКТИКА ----------------------------------------------------------------
+
+// const myPractic = { a:6, b:7};
+// console.log(myPractic);
+
+// const myFunction = function (myPractic) {
+//   myPractic = { a: 6, b: 7 };
+//   console.log(myFunction);
+// };
+
+// myFunction({ a: 1, b: 2 });
+
+// const rtfm = function () {
+//   return { a: 5 };
+// };
+
+// console.log(rtfm());
 /*
  * Доступ к свойству
  * - obj.key
