@@ -1,18 +1,4 @@
-/*
- * Объекты (делаем плейлист музыки: имя, рейтинг, треки, кол-во треков)
- * - Литерал объекта
- * - Свойства, ключи (имя) и значения
- * - Как отличить объект от области видимости
- */
 
-// const playlist = {
-//   name: 'Мой супер плейлист',
-//   rating: 5,
-//   tracks: ['трек-1', 'трек-2', 'трек-3'],
-//   trackCount: 3,
-// };
-
-// console.log(playlist);
 
 // МОЯ ПРАКТИКА ----------------------------------------------------------------
 
@@ -49,7 +35,7 @@ myFunction({ c: 'і ще раз викликаю функцію' })
 myFunction({ c: 'надіюся що вже запамятав як її викликати' });
 
 
-// МОЯ ПРАКТИКА ---------Вчуся викликати властивості з обєкта-------------------------------------------------------
+// МОЯ ПРАКТИКА ---------Вчуся викликати значення властивості з обєкта-------------------------------------------------------
 
 const myPlaylist = {
   name: 'Bohdan Antoshkiv',
@@ -58,11 +44,102 @@ const myPlaylist = {
   trackCount: 3,
 };
 
+myPlaylist.language = 'ukrainian';
+myPlaylist.rating = 777;
+  // console.log(myPlaylist);
+
 // console.log(myPlaylist);
-console.log(myPlaylist.name);
-console.log(myPlaylist.rating);
-console.log(myPlaylist.trackCount);
-console.log(myPlaylist.tracks);
+// console.log(myPlaylist.name);
+// console.log(myPlaylist.rating);
+// console.log(myPlaylist.trackCount);
+// console.log(myPlaylist.tracks);
+
+// КЛЮЧ Властивості завжди строка
+// При зверненні до неіснуючого ключа повернеться undefined
+// можна звертатися до ключа через квадратні дужки []
+// console.log(myPlaylist.name) те саме що console.log(myPlaylist['name']);
+// console.log(myPlaylist['name']);
+// console.log(myPlaylist['rating']);
+// console.log(myPlaylist['tracks']);
+// console.log(myPlaylist['trackCount']);
+
+// ---------Вчуся викликати значення властивості через змінну з обєкта-----------------------------------
+
+// const propertyName = 'tracks';
+// const propertyName1 = 'name';
+// const propertyName2 = 'rating';
+// const propertyName3 = 'trackCount';
+
+// console.log(propertyName);
+// console.log(myPlaylist[propertyName]);
+// console.log(myPlaylist[propertyName1]);
+// console.log(myPlaylist[propertyName2]);
+// console.log(myPlaylist[propertyName3]);
+
+// / МОЯ ПРАКТИКА ---------КОРОТКА ЗАПИС ВЛАСТИВОСТЕЙ-------------------------------------------------------
+
+const username = 'Tania';
+const email = 'tania777777@mail.com';
+
+// const signupData = {
+//   username: username,
+//   email: email,
+// };
+
+// Код зверху це те самме що код знизу-------------------------------------------------
+
+const signupData = {
+  username,
+  email,
+}
+
+// console.log(signupData);
+
+// / МОЯ ПРАКТИКА --------ВИРАХОВУВАНІ ВЛАСТИВОСТІ-------------------------------------------------------
+
+// наприклад input ---  <input name="color" value = "tomato">
+
+const inputName = 'колір';
+const inputValue = 'будь який колір';
+
+const colorPickerData = {
+  [inputName]: 'Колір такий',
+  [inputValue]: 'червоний',
+}
+
+// console.log(colorPickerData);
+
+
+// / МОЯ ПРАКТИКА --------ССИЛКОВИЙ ТИП {}==={}    -------------------------------------------------------
+
+const a = {
+  x: 10,
+  y:7,
+}
+const b = a;
+
+console.log(b);
+
+
+
+
+
+// --------------------КОД РЕПЕТИ ----------------------------------------------------
+/*
+ * Объекты (делаем плейлист музыки: имя, рейтинг, треки, кол-во треков)
+ * - Литерал объекта
+ * - Свойства, ключи (имя) и значения
+ * - Как отличить объект от области видимости
+ */
+
+// const playlist = {
+//   name: 'Мой супер плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2', 'трек-3'],
+//   trackCount: 3,
+// };
+
+// console.log(playlist);
 
 // const x = {};
 
@@ -121,7 +198,7 @@ console.log(myPlaylist.tracks);
 // console.log(playlist.name);
 // console.log(playlist.trackCount);
 
-const propertyName = 'tracks';
+// const propertyName = 'tracks';
 
 // console.log(playlist.rating);
 // console.log(playlist['rating']);
@@ -132,13 +209,13 @@ const propertyName = 'tracks';
 /*
  * Короткая запись свойств
  */
-const username = 'Mango';
-const email = 'mango@mail.com';
+// const username = 'Mango';
+// const email = 'mango@mail.com';
 
-const signupData = {
-  username,
-  email,
-};
+// const signupData = {
+//   username,
+//   email,
+// };
 
 // console.log(signupData);
 
@@ -148,12 +225,12 @@ const signupData = {
 
 //  <input name="color" value="tomato" >
 
-const inputName = 'color';
-const inputValue = 'tomato';
+// const inputName = 'color';
+// const inputValue = 'tomato';
 
-const colorPickerData = {
-  [inputName]: inputValue,
-};
+// const colorPickerData = {
+//   [inputName]: inputValue,
+// };
 
 // console.log(colorPickerData);
 
