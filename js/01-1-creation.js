@@ -16,14 +16,53 @@
 
 // МОЯ ПРАКТИКА ----------------------------------------------------------------
 
-const playlist = {
-  name: "my playlist",
-  rating: 4,
-  tracs: ['track-1', 'track-2', 'track-3'],
-  trackCount: 3,
-}
+// const playlist = {
+//   name: "my playlist",
+//   rating: 4,
+//   tracs: ['track-1', 'track-2', 'track-3'],
+//   trackCount: 3,
+// }
 
-console.log(playlist)
+// console.log(playlist)
+
+// const myPlaylist = {
+//   name: 'Bohdan Antoshkiv',
+//   rating: 10,
+//   tracks: ['track-1', 'track-2', 'track-3'],
+//   trackCount: 3,
+// };
+
+// console.log(myPlaylist);
+
+// const x = {} - це обєкт (бо фігурні дужки () після знаку =)!!!!!!!!!!!!!!!!!!!
+
+const myFunction = function (myObject) {
+  //   myObject = { a: 777, b: 666 }
+  // console.log(myObject)
+};
+
+myFunction({ Do: 'Я вчу JS' });
+myFunction({ will: 'я вивчу JS' });
+myFunction({ a: 'тренуюся викликаю функції' });
+myFunction({ b: 'це раз викликаю функцію' });
+myFunction({ c: 'і ще раз викликаю функцію' })
+myFunction({ c: 'надіюся що вже запамятав як її викликати' });
+
+
+// МОЯ ПРАКТИКА ---------Вчуся викликати властивості з обєкта-------------------------------------------------------
+
+const myPlaylist = {
+  name: 'Bohdan Antoshkiv',
+  rating: 10,
+  tracks: ['track-1', 'track-2', 'track-3'],
+  trackCount: 3,
+};
+
+// console.log(myPlaylist);
+console.log(myPlaylist.name);
+console.log(myPlaylist.rating);
+console.log(myPlaylist.trackCount);
+console.log(myPlaylist.tracks);
 
 // const x = {};
 
