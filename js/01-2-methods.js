@@ -62,34 +62,34 @@
 // console.log(myPlaylist);
 
 // ---------Фукнції в обєкті ЩЕ ОДИН ПРИКЛАД Оновлюємо рейтинг-----------------
-const myPlaylist = {
-  name: 'Bohdan Antoshkiv',
-  rating: 10,
-  tracks: ['track-1', 'track-2', 'track-3'],
-  trackCount: 3,
-  changeName(newName) {
-    // console.log('this всередині ФУНКЦІЇ  ', this);
+// const myPlaylist = {
+//   name: 'Bohdan Antoshkiv',
+//   rating: 10,
+//   tracks: ['track-1', 'track-2', 'track-3'],
+//   trackCount: 3,
+//   changeName(newName) {
+//     // console.log('this всередині ФУНКЦІЇ  ', this);
     
-    this.name = newName;
-  },
-  addTrack(track) {
-    this.tracks.push(track)
-    this.trackCount = this.tracks.length
-  },
-  updateRating(newRating) {
-    this.rating = newRating;
-  }
-};
+//     this.name = newName;
+//   },
+//   addTrack(track) {
+//     this.tracks.push(track)
+//     this.trackCount = this.tracks.length
+//   },
+//   updateRating(newRating) {
+//     this.rating = newRating;
+//   }
+// };
 
-myPlaylist.changeName('Antoshkiv Bohdan new ')
+// myPlaylist.changeName('Antoshkiv Bohdan new ')
 
-myPlaylist.addTrack('імя мого нового треку')
-myPlaylist.addTrack('імя мого нового треку2');
-myPlaylist.addTrack('імя мого нового треку3');
+// myPlaylist.addTrack('імя мого нового треку')
+// myPlaylist.addTrack('імя мого нового треку2');
+// myPlaylist.addTrack('імя мого нового треку3');
 
-myPlaylist.updateRating(8)
+// myPlaylist.updateRating(8)
 
-console.log(myPlaylist);
+// console.log(myPlaylist);
 
 
 // --------------------КОД РЕПЕТИ ----------------------------------------------------
