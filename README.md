@@ -1,2 +1,4 @@
-# js-22-training
-js-22-training
+# План занятия
+
+-   Ключевое слово this
+-   Методы bind, call и apply
