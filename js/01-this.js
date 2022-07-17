@@ -1,3 +1,134 @@
+// -------------------------Моя ПРАКТИКА ✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅-----
+
+
+// ------------------------- функція передається по ссилці а не копія-✅✅✅✅✅✅✅✅✅✅✅✅✅----
+
+// console.log('[] === []: ', [] === []);
+// console.log('{} === {}: ', {} === {});
+// console.log(
+//     'function() {} === function() {}: ',
+//     function () {} === function () {},
+// );
+
+// const fnA = function () {
+//     console.log('hello');
+// };
+
+// const fnB = fnA;
+// console.log('fnB === fnA: ', fnB === fnA);
+
+
+// ------------------------- Контекст THIS-✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅✅----
+
+/*
+ * Контекст (this)
+ *    - Где и как была объявлена функция НЕ ИМЕЕТ НИКАКОГО ВЛИЯНИЯ на контекст.
+ *    - Контекст определяется В МОМЕНТ ВЫЗОВА ФУНКЦИИ, если он не привязан явно.
+ */
+
+
+// ----- Контекст THIS Как метод объекта. В контексте объекта.-✅✅✅----
+/*
+ * Как метод объекта. В контексте объекта.
+ */
+
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//     },
+// };
+
+// user.showTag();
+
+// ----- Контекст THIS Вызов без контекста.-✅✅✅----
+/*
+ * Вызов без контекста
+ * - В строгом режиме = undefined
+ * - Не в строгом режиме = window
+ */
+
+// const foo = function () {
+//     console.log('foo -> this', this);
+// };
+
+// foo();
+
+const myName = function () {
+    console.log('my name', this);
+};
+
+myName()
+
+// ----- Контекст THIS Как метод объекта, но объявлена как внешняя функция-✅✅✅----
+
+/*
+ * Как метод объекта, но объявлена как внешняя функция.
+ * В контексте объекта.
+ */
+
+// const showTag = function () {
+//     console.log('showTag -> this', this);
+//     console.log('showTag -> this.tag', this.tag);
+// };
+
+// showTag();
+
+// const user = {
+//     tag: 'Mango',
+// };
+
+// user.showUserTag = showTag;
+// console.log('user', user);
+
+// user.showUserTag();
+
+// ----- Контекст THIS Вызов без контекста, но объявлена как метод объекта.-✅✅✅----
+
+/*
+ * Вызов без контекста, но объявлена как метод объекта.
+ */
+
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//         console.log('showTag -> this.tag', this.tag);
+//     },
+// };
+
+// user.showTag();
+
+// const outerShowTag = user.showTag;
+
+// outerShowTag();
+
+// ----- Контекст THIS Контекст в callback-функциях-✅✅✅----
+
+/*
+ * Контекст в callback-функциях
+ */
+
+// const user = {
+//     tag: 'Mango',
+//     showTag() {
+//         console.log('showTag -> this', this);
+//         console.log('showTag -> this.tag', this.tag);
+//     },
+// };
+
+// const invokeAction = function (action) {
+//     console.log(action);
+
+//     action();
+// };
+
+// invokeAction(user.showTag);
+
+
+
+
+// -------------------------КОД РЕПЕТИ 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴-
 /*
  * Функция это частный случай объекта -> ССЫЛОЧНЫЙ ТИП
  */
@@ -191,21 +322,21 @@
  * Тренируемся 5
  */
 
-const counter = {
-    value: 0,
-    increment(value) {
-        console.log('increment -> this', this);
-        this.value += value;
-    },
-    decrement(value) {
-        console.log('decrement -> this', this);
-        this.value -= value;
-    },
-};
+// const counter = {
+//     value: 0,
+//     increment(value) {
+//         console.log('increment -> this', this);
+//         this.value += value;
+//     },
+//     decrement(value) {
+//         console.log('decrement -> this', this);
+//         this.value -= value;
+//     },
+// };
 
-const updateCounter = function (value, operation) {
-    operation(value);
-};
+// const updateCounter = function (value, operation) {
+//     operation(value);
+// };
 
-updateCounter(10, counter.increment);
-updateCounter(5, counter.decrement);
+// updateCounter(10, counter.increment);
+// updateCounter(5, counter.decrement);
